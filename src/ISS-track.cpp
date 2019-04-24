@@ -20,17 +20,11 @@ const double LONGITUDE = -71.316263;  // degrees (W)
 const double ELEVATION = 0.040;       // km
 
 // Satellite Data (Using ISS Data for now)
-const char NAME[] = "ISS (ZARYA)             ";
-/*
-const char TLE1[] =
-    "1 25544U 98067A   18082.87282200  .00016717  00000-0  10270-3 0  9016";
-const char TLE2[] =
-    "2 25544  51.6416  84.0319 0001818 251.3399 108.7556 15.54118379 25249";
-    */
-const char TLE1[] =
-    "1  1806U 65098B   18082.61573098 +.00000412 +00000-0 +14450-3 0  9995";
-const char TLE2[] =
-    "2  1806 079.7955 296.9175 1438476 253.8471 089.9975 12.05500542286053";
+const char NAME[] = "ISS (CSUNSAT1)             ";
+
+
+const char TLE1[] = "1 24278U 96046B   19103.44472709  .00000002  00000-0  36398-4 0  9994";
+const char TLE2[] = "2 24278  98.5274 265.8732 0351113  51.9539 311.2741 13.53090134118849";
 
 /**
 * notes:
@@ -61,6 +55,7 @@ int main() {
                groundstation.status() == WAITING) {
       cout << "3" << endl;
       groundstation.wait();
+      groundstation.moveToNextAppearance();
     } else {
       cout << "4" << endl;
       groundstation.moveToNextAppearance();
