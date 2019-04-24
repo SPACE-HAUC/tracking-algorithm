@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/SpaceHAUC-Command-and-Data-Handling/tracking-algorithm.svg?branch=master)](https://travis-ci.org/SpaceHAUC-Command-and-Data-Handling/tracking-algorithm)
+[![Build Status](https://travis-ci.org/SPACE-HAUC/tracking-algorithm.svg?branch=master)](https://travis-ci.org/SPACE-HAUC/tracking-algorithm)
 
 This program uses the libraries provided by Daniel Warner's sgp4 library, you can see the source code at his [github repository](https://github.com/dnwrnr/sgp4), and you can learn more about it on his website, https://www.danrw.com/sgp4/. 
 
